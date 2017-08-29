@@ -1,0 +1,25 @@
+{
+  "name": "ldn-retail-server",
+  "version": "1.0.0",
+  "main": "server/app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "1.7.0",
+    "ejs": "^2.5.7",
+    "errorhandler": "1.5.0",
+    "express": "4.15.4",
+    "express-jwt": "5.3.0",
+    "express-session": "1.15.5",
+    "jsonwebtoken": "7.4.3",
+    "method-override": "^2.3.9"
+  },
+  "devDependencies": {
+    "requirejs": "2.3.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server/app.js"
+  }
+}

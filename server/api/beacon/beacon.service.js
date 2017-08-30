@@ -7,6 +7,6 @@ exports.userInRange = function (req, res) {
     console.log('received user data: ' , userData);
 
     //push event to client and change the screen
-    return res.json(200, 'details received');
+    return res.status(200).json('details received');
 
 };

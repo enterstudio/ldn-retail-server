@@ -10,9 +10,9 @@ var config = {
     root: path.normalize(__dirname + '/../../..'),
 
     // Server port
-    port: process.env.PORT || 9000
+    port: process.env.PORT || 9000,
 
-
+    ioPort: process.env.IOPORT || 3000
 
 };
 

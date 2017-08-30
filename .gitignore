@@ -2,6 +2,7 @@
 build/
 .idea/
 *.iml
+.idea/workspace.xml
 
 # node.js
 #

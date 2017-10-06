@@ -8,7 +8,7 @@ var config = {
 
 function initIOSocket() {
 
-    var imgSrc =  'london_skyline2';
+    var imgSrc =  'plane';
 
     let socket = io(config.SOCKET_IO_ADDRESS + ':' + config.SOCKET_IO_PORT,
         {
@@ -26,7 +26,8 @@ function initIOSocket() {
 
     socket.on('USER_IN_RANGE', function (data) {
         console.log('USER_IN_RANGE: ', data);
-        document.body.style.background = 'url(assets/'+ imgSrc  +'.jpg) no-repeat';
+        imgSrc = imgSrc === 'plane' ? 'plane-promotion' : 'plane';
+        document.body.style.background = 'url(assets/'+ imgSrc  +'.png) no-repeat';
         document.body.style.backgroundSize = 'cover';
     });
 
